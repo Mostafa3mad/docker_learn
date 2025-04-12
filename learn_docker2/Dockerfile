@@ -3,7 +3,7 @@ FROM python:3.11-slim
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 # Set the working directory
-WORKDIR /app
+WORKDIR /django
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
